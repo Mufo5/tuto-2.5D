@@ -74,7 +74,8 @@ res://
 * [x] Sol et collisions
 * [x] Personnage joueur
 * [x] Déplacements RPG
-* [ ] Interactions
+* [x] Décor modulable
+* [x] Interactions
 * [ ] Système de maps
 * [ ] Combats / dialogues
 

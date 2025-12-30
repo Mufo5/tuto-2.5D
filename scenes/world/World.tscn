@@ -1,6 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bejtpkhr11hja"]
+[gd_scene load_steps=9 format=3 uid="uid://bejtpkhr11hja"]
 
-[ext_resource type="PackedScene" uid="uid://dknk3gybuvggh" path="res://scenes/characters/Player.tscn" id="1_cg0nm"]
+[ext_resource type="PackedScene" uid="uid://dknk3gybuvggh" path="res://scenes/characters/player.tscn" id="1_ql4p6"]
+[ext_resource type="PackedScene" uid="uid://dkmr1jt83sqy2" path="res://scenes/world/tree.tscn" id="2_fvnrw"]
+[ext_resource type="PackedScene" uid="uid://b6wxonynu0ykl" path="res://scenes/world/itemPickup.tscn" id="3_e42ft"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_cl0tt"]
 
@@ -31,7 +33,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_qvu62")
 transform = Transform3D(40, 0, 0, 0, 1, 0, 0, 0, 40, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_mkjy2")
 
-[node name="Player" parent="." instance=ExtResource("1_cg0nm")]
+[node name="Player" parent="." instance=ExtResource("1_ql4p6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Wall_1" type="StaticBody3D" parent="."]
@@ -43,3 +45,19 @@ mesh = SubResource("BoxMesh_2mu8g")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_1"]
 transform = Transform3D(2, 0, 0, 0, 3, 0, 0, 0, 0.5, 2, 1.5, 0)
 shape = SubResource("BoxShape3D_g3cy3")
+
+[node name="Tree" parent="." instance=ExtResource("2_fvnrw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0966, 1.07863, -6.20531)
+
+[node name="Tree2" parent="." instance=ExtResource("2_fvnrw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.18353, 1.12241, -7.08425)
+
+[node name="Tree3" parent="." instance=ExtResource("2_fvnrw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.31054, 1.09101, -7.76921)
+
+[node name="ItemPickup" parent="." instance=ExtResource("3_e42ft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86588, 0.741171, -0.739166)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.90204, 1.68104, -0.668261)
+light_size = 1.0

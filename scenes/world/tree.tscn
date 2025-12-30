@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkmr1jt83sqy2"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vl2ld"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_shifc"]
+
+[node name="Tree" type="StaticBody3D"]
+
+[node name="TreeMesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CylinderMesh_vl2ld")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_shifc")
