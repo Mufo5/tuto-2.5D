@@ -72,7 +72,7 @@ res://
 * [x] Scène principale `World`
 * [x] Caméra isométrique
 * [x] Sol et collisions
-* [ ] Personnage joueur
+* [x] Personnage joueur
 * [ ] Déplacements RPG
 * [ ] Interactions
 * [ ] Système de maps
