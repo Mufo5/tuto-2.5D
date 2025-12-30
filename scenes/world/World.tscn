@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bejtpkhr11hja"]
+[gd_scene load_steps=7 format=3 uid="uid://bejtpkhr11hja"]
 
 [ext_resource type="PackedScene" uid="uid://dknk3gybuvggh" path="res://scenes/characters/Player.tscn" id="1_cg0nm"]
 
@@ -8,6 +8,10 @@
 albedo_color = Color(0.027451, 0.215686, 0, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mkjy2"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2mu8g"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g3cy3"]
 
 [node name="World" type="Node3D"]
 
@@ -29,3 +33,13 @@ shape = SubResource("BoxShape3D_mkjy2")
 
 [node name="Player" parent="." instance=ExtResource("1_cg0nm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Wall_1" type="StaticBody3D" parent="."]
+
+[node name="WallMesh" type="MeshInstance3D" parent="Wall_1"]
+transform = Transform3D(2, 0, 0, 0, 3, 0, 0, 0, 0.5, 2, 1.5, 0)
+mesh = SubResource("BoxMesh_2mu8g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_1"]
+transform = Transform3D(2, 0, 0, 0, 3, 0, 0, 0, 0.5, 2, 1.5, 0)
+shape = SubResource("BoxShape3D_g3cy3")

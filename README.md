@@ -73,7 +73,7 @@ res://
 * [x] Caméra isométrique
 * [x] Sol et collisions
 * [x] Personnage joueur
-* [ ] Déplacements RPG
+* [x] Déplacements RPG
 * [ ] Interactions
 * [ ] Système de maps
 * [ ] Combats / dialogues
