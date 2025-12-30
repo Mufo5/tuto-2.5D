@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bejtpkhr11hja"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6o4ca"]
+
+[node name="World" type="Node3D"]
+
+[node name="CameraIso" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 12, 12)
+current = true
+fov = 40.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.85238, 2.40927, -2.51175)
+mesh = SubResource("BoxMesh_6o4ca")
