@@ -71,7 +71,7 @@ res://
 * [x] Architecture des dossiers
 * [x] Scène principale `World`
 * [x] Caméra isométrique
-* [ ] Sol et collisions
+* [x] Sol et collisions
 * [ ] Personnage joueur
 * [ ] Déplacements RPG
 * [ ] Interactions
